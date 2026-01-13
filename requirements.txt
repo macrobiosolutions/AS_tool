@@ -6,3 +6,4 @@ scikit-learn
 py3Dmol
 stmol
 scipy
+ipython-genutils
