@@ -1,0 +1,8 @@
+numpy
+pandas
+streamlit
+biopython
+scikit-learn
+py3Dmol
+stmol
+scipy
