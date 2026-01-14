@@ -214,7 +214,7 @@ with right:
     all_chains = _safe_chain_list(structure)
     chains_selected = st.multiselect("Chains to include", options=all_chains, default=all_chains)
 
-    if run:
+    if st.session_state.run_prediction:
         atoms = get_atoms(structure, chains_selected)
         if len(atoms) == 0:
             st.error("No atoms found after chain/altloc/water filtering.")
