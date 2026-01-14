@@ -192,7 +192,7 @@ with left:
         st.session_state.run_prediction = False
     
     # Button click sets the state
-    if = st.button("Run prediction", type="primary", use_container_width=True):
+    if st.button("Run prediction", type="primary", use_container_width=True):
         st.session_state.run_prediction = True
 
 with right:
