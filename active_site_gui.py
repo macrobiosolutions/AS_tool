@@ -187,7 +187,13 @@ with left:
 
     sphere_radius = st.slider("Pocket-point sphere radius (Å)", 0.3, 2.5, 0.8, 0.1)
 
-    run = st.button("Run prediction", type="primary", use_container_width=True)
+    # Initialize session state for run button
+    if 'run_prediction' not in st.session_state:
+        st.session_state.run_prediction = False
+    
+    # Button click sets the state
+    if = st.button("Run prediction", type="primary", use_container_width=True):
+        st.session_state.run_prediction = True
 
 with right:
     st.subheader("3D view + downloads")
